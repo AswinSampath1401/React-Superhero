@@ -6,7 +6,7 @@ const PopularSearchItem = ({popularSearchData}) => {
             {
                 popularSearchData.map((item)=>(
                     <div className='popularCharacterItem' key={item.id}>
-                        {item.name}
+                       <h2>{item.name}</h2> 
                     <a href={'/'+ item.id}><img className='popularImage' alt={item.name} src={item.image.url}></img></a>
                     </div>
                 ))

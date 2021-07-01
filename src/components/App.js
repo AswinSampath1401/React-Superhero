@@ -23,7 +23,7 @@ const App = () => {
             <PopularSearches />
           </div>
         </Route>
-        <Route path='/:id'>
+        <Route exact path='/:id'>
           <SuperHeroDetails />
         </Route>
       </Switch>

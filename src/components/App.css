@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(216, 81, 81);
+}
 
 .header{
     width: 100%;
@@ -14,7 +17,7 @@
     font-weight: 400;
     font-family: fantasy;
     color: rgb(209, 208, 208);
-    background-color: rgb(209, 51, 51);
+    background-color: rgb(119, 4, 4);
 
 }
 .searchContainer{
@@ -22,9 +25,47 @@
 }
 
 .inputBox{
+    width: 85vw;
+    min-width: 150px;
+    height: 35px;
+}
+
+input:placeholder-shown{
+    text-align: center;
+}
+
+input {
+    text-align: center;
+}
+
+.submitbtn{
+    height: 35px;
+}
+
+.loading-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+}
+
+.loading-container img{
+    height: 500px;
+    width: 300px;
+}
+
+.result-container{
     width: 90vw;
-    min-width: 200px;
-    height: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.popularSearchHeading{
+    text-align: center;
+    color: rgb(102, 6, 6);
 }
 
 .popularCharacterContainer{
@@ -56,6 +97,11 @@
     height: 80vh;
 }
 
+.end-of-search{
+    height: 2px;
+    background-color:  black;
+}
+
 .main-container{
     min-height: 90vh;
     margin: 10px;
@@ -72,6 +118,7 @@
     flex-direction: column;
     width: 40vw;
     /* background-color: rebeccapurple; */
+    color: rgb(241, 235, 235);
     min-height: 40vh;
     justify-content: center;
     align-items: center;
@@ -101,4 +148,38 @@
     color: white;
     font-weight:400;
     font-size: xx-large;
+}
+
+.anchor-back{
+    text-decoration: none;
+}
+
+.back{
+    display: grid;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(20, 1, 1);
+    color: white;
+    margin: auto;
+    font-size: x-large;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+@media screen and (max-width:1100px) {
+    .main-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-container{
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .popularImage{
+        width: 50vw;
+    }
 }
