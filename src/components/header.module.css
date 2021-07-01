@@ -1,0 +1,11 @@
+.header{
+    text-align: center;
+    display: flex;
+    min-height: 10vh;
+    font-size: xx-large;
+    font-weight: 400;
+    font-family: fantasy;
+    color: rgb(209, 208, 208);
+    background-color: rgb(209, 51, 51);
+
+}
