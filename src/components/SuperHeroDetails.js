@@ -1,5 +1,6 @@
 import React, { useEffect , useState } from 'react'
 import { useParams } from 'react-router'
+import SuperHeroItem from './SuperHeroItem';
 
 const SuperHeroDetails = () => {
     const {id} = useParams()
@@ -15,14 +16,14 @@ const SuperHeroDetails = () => {
                 .catch(err=>console.log(err))
         }
         fetchData()
-    },[])
+    },[id])
     return superHeroData.length===0 ? (
         <div>
             Loading .. {id}
         </div>
     ) : (
         <div>
-            {JSON.stringify(superHeroData)}
+           <SuperHeroItem superHeroData={superHeroData} />
             <div>
                 <a href='/'><button>Go Back</button></a>
             </div>

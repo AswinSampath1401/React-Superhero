@@ -49,3 +49,56 @@
     width: 25vw;
     opacity: 0.8;
 }
+
+.superHeroImage{
+    margin: 20px;
+    width: 30vw;
+    height: 80vh;
+}
+
+.main-container{
+    min-height: 90vh;
+    margin: 10px;
+    display: flex;
+    flex-direction:row;
+    width: 95vw;
+    background-color: brown;
+    justify-content: center;
+}
+
+.left-container{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    /* background-color: rebeccapurple; */
+    min-height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+.right-container{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    min-height: 40vh;
+    /* background-color:tomato */
+}
+
+.progress-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+}
+
+.progress-description{
+    color: white;
+    font-weight:400;
+    font-size: xx-large;
+}
